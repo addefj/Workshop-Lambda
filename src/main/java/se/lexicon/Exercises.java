@@ -181,7 +181,6 @@ public class Exercises {
         System.out.println(message);
         //Write your code here
 
-        //Predicate<Person> filterBornBefore1950 = person -> person.getBirthDate().isBefore(LocalDate.parse("1950"));
         Predicate<Person> filterBornBefore1950 = person -> person.getBirthDate().getYear() < 1950;
         Comparator<Person> sortByBirthYear = (p1, p2) -> p1.getBirthDate().compareTo(p2.getBirthDate());
 
